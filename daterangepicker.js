@@ -67,18 +67,22 @@
         this.applyButtonClasses = 'btn-primary';
         this.cancelButtonClasses = 'btn-default';
 
-        this.locale = {
-            direction: 'ltr',
-            format:  'MM/DD/YYYY', // moment.localeData().longDateFormat('L'),
-            separator: ' - ',
-            applyLabel: 'Apply',
-            cancelLabel: 'Cancel',
-            weekLabel: 'W',
-            customRangeLabel: 'Custom Range',
-            daysOfWeek: moment.weekdaysMin(),
-            monthNames: moment.monthsShort(),
-            firstDay:  0, // moment.localeData().firstDayOfWeek(),
-        };
+    this.locale = {
+      direction: 'ltr',
+      format: 'MM/DD/YYYY', // moment.localeData().longDateFormat('L'),
+      separator: ' - ',
+      applyLabel: 'Apply',
+      cancelLabel: 'Cancel',
+      weekLabel: 'W',
+      customRangeLabel: 'Custom Range',
+      daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'], // moment.weekdaysMin(),
+      monthNames: [
+        'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+      ], // moment.monthsShort(),
+      firstDay: 0, // moment.localeData().firstDayOfWeek(),
+    };
+
 
         this.callback = function() { };
 
